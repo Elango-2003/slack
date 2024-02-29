@@ -154,20 +154,20 @@ def handle_message(event_data):
             }
 
             #call the api route
-            response = requests.post("http://127.0.0.1:5000/send_birthday", json=data)
+            response = requests.post("http://0.0.0.0:10000/send_birthday", json=data)
         if arr[0]=="shinigami" and arr[1]=="del":
             data = {
                 "username": arr[2]
             }
-            response = requests.post("http://127.0.0.1:5000/del_one_birthday", json=data)
+            response = requests.post("http://0.0.0.0:10000/del_one_birthday", json=data)
         if arr[0]=="shinigami" and arr[1]=="delall":
-            response = requests.delete("http://127.0.0.1:5000/del_all_birthday")
+            response = requests.delete("http://0.0.0.0:10000/del_all_birthday")
         if arr[0]=="shinigami" and arr[1]=="update":
             data = {
                 "username": arr[2],
                 "birthday": arr[3]
             }
-            response = requests.put("http://127.0.0.1:5000/update_birthday",json=data)
+            response = requests.put("http://0.0.0.0:10000/update_birthday",json=data)
         
       
         
