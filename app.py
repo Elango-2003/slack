@@ -7,7 +7,7 @@ import requests
 app = Flask(__name__) 
 server = app
 channelName = "#general"
-slack_token = 'xoxb-6725827617664-6692113150615-yaBRR4bb6bGMjIOX41AZ1Jb9'
+slack_token = 'xoxb-6725827617664-6692113150615-UvfnFje8fY0PJvYeONGSnOx4'
 slack_client = WebClient(token=slack_token)
 slack_signing_secret = 'd5891134cb42f46cb8288c0cda2cca58'
 slack_events_adapter = SlackEventAdapter(
