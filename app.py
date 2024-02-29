@@ -6,7 +6,7 @@ from datetime import datetime
 import requests
 app = Flask(__name__) 
 server = app
-channelName = "#general"
+channelName = "#notifications"
 slack_token = 'xoxb-6725827617664-6692113150615-UvfnFje8fY0PJvYeONGSnOx4'
 slack_client = WebClient(token=slack_token)
 slack_signing_secret = 'd5891134cb42f46cb8288c0cda2cca58'
